@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WIBSAYT</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container signup" id="signupForm">
+            <form>
+                <h1>KARIBOK</h1>
+                <p>Welcome! Let's get you started</p>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Password" required>
+                <input type="password" placeholder="Repeat Password" required>
+                <button type="button" class="redirect-button" onclick="redirectToHome()">Sign Up</button>
+                <div class="social-login">
+                    <p>Or continue with</p>
+                    <a href="#" class="social-button google">
+                        <img src="gg.png" alt="Google">
+                    </a>
+                    <a href="#" class="social-button facebook">
+                        <img src="fb.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-button apple">
+                        <img src="ap.png" alt="Apple">
+                    </a>
+                </div>
+                <a href="#" id="showLogin">Already have an account? Log In here</a>
+            </form>
+        </div>
+        <div class="form-container login" id="loginForm">
+            <form>
+                <h1>KARIBOK</h1>
+                <p>Welcome back! Log in to your account</p>
+                <input type="email" placeholder="Email" required>
+                <div class="password-wrapper">
+                    <input type="password" placeholder="Password" id="passwordInput" required>
+                    <img src="sh.png" alt="Show Password" id="togglePassword" class="toggle-password">
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <button type="button" class="redirect-button" onclick="redirectToHome()">Log In</button>
+                <div class="social-login">
+                    <p>Or continue with</p>
+                    <a href="#" class="social-button google">
+                        <img src="gg.png" alt="Google">
+                    </a>
+                    <a href="#" class="social-button facebook">
+                        <img src="fb.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-button apple">
+                        <img src="ap.png" alt="Apple">
+                    </a>
+                </div>
+                <a href="#" id="showSignup">Doesn't have an account? Sign Up here</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
