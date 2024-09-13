@@ -180,13 +180,8 @@ body{
 }
 
 
-.troll button{
-    border: transparent;
-    height: 50px;
-    width: 300px;
-    font-size: 15px;
-    border-radius: 90px;
-    cursor: pointer;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
+.troll h1{
+    color: #ede3e3;
+    align-items: center;
+    font-size: 100px;
 }
