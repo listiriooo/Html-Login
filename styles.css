@@ -1,4 +1,5 @@
-body{
+/* General Body Styling */
+body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #3b423f;
     background-size: cover;
@@ -6,66 +7,61 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 100%;
-    min-height: 100vh;
+    height: 100%; /* Updated from 100vh */
+    min-height: 100vh; /* Ensure full viewport height */
     margin: 0;
-    transform: scale(0.80);
+    transform: scale(1); /* Remove scaling for mobile */
 }
 
-.main-container{
+/* Main Container */
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.container{
+/* Form Container */
+.container {
     background-color: #ffffff;
     border-radius: 28px;
-    width: 90%;
+    width: 100%;
     max-width: 450px;
     min-height: 600px;
     position: relative;
     overflow: hidden;
-    transition: transform 0.5s ease-in-out;
+    /* Temporarily remove transform to debug */
+    /* transition: transform 0.5s ease-in-out; */
     z-index: 10;
     margin: 20px auto;
 }
 
-.form-container{
+/* Signup and Login Forms */
+.form-container {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    /* Temporarily remove transform to debug */
+    /* transition: transform 0.5s ease-in-out; */
 }
 
-.signup{
-    transform: translateY(0);
+.signup, .login {
+    transform: translateY(0); /* Ensure both forms are visible */
 }
 
-.login{
-    transform: translateY(100%);
-}
-
-.show-login .signup{
-    transform: translateY(-100%);
-}
-
-.show-login .login{
-    transform: translateY(0);
-}
-
-.container form{
+/* Adjust Form for Mobile */
+.container form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 20px; /* Add padding for mobile */
     height: 100%;
 }
 
-.container input{
+/* Adjust Inputs */
+.container input {
     background-color: #ede3e3;
     border: 1px solid transparent;
     border-radius: 7px;
@@ -78,7 +74,8 @@ body{
     box-sizing: border-box;
 }
 
-.brand-container{
+/* Brand Container */
+.brand-container {
     background-color: rgba(255, 255, 255, 0.159);
     margin-top: 80px;
     margin-left: 30px;
@@ -88,6 +85,35 @@ body{
     justify-content: center;
     align-items: center;
     width: 550px;
+    min-height: 270px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Mobile-Specific Styling */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ensure it fits on smaller screens */
+        min-height: auto; /* Let content dictate height */
+    }
+
+    body {
+        transform: scale(1); /* Ensure it fits properly on mobile */
+    }
+
+
+
+
+.brand-container{
+    background-color: rgba(255, 255, 255, 0.159);
+    margin-top: 80px;
+    margin-left: 30px;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     min-height: 270px;
     color: #fff;
     text-align: center;
