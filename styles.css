@@ -1,0 +1,329 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #3b423f;
+    background-size: cover;
+    background-image: url('https://i.pinimg.com/originals/5f/48/a7/5f48a737003d2425dbdae5a0e46a4323.gif');
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    transform: scale(0.80);
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container{
+    background-color: #ffffff;
+    border-radius: 28px;
+    width: 450px;
+    max-width: 100%;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.signup{
+    transform: translateY(0);
+}
+
+.login{
+    transform: translateY(100%);
+}
+
+.show-login .signup{
+    transform: translateY(-100%);
+}
+
+.show-login .login{
+    transform: translateY(0);
+}
+
+.container form{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input{
+    background-color: #ede3e3;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    outline-color: #3b423f;
+    padding: 10px 15px;
+    margin: 10px 0;
+    font-size: 14px;
+    width: 100%;
+    max-width: 330px;
+    box-sizing: border-box;
+}
+
+.brand-container{
+    background-color: rgba(255, 255, 255, 0.159);
+    margin-top: 80px;
+    margin-left: 30px;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    min-height: 270px;
+    color: #fff;
+    text-align: center;
+}
+
+.brand-container h1{
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-top: -170px;
+    cursor: default;
+}
+
+.brand-container h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ede3e3;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    margin-top: -20px;
+    margin-bottom: 70px;
+    cursor: default;
+}
+
+.brand-container h3{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 55px;
+    margin-bottom: -80px;
+    cursor: default;
+}
+
+.brand-container p{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    cursor: default;
+}
+
+.container button{
+    background-color: #3b423f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 330px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.container button:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container input:hover{
+    border: 1px solid #3b423f;
+}
+
+.password-wrapper{
+    position: relative;
+    width: 100%;
+    max-width: 330px;
+    box-sizing: border-box;
+}
+
+.password-wrapper input{
+    padding-right: 45px;
+}
+
+.toggle-password{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.container button{
+    background-color: #3b423f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    padding: 10px 0; 
+    width: 100%;
+    max-width: 330px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.container button:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clickable-text {
+    color: #3b423f;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.clickable-text {
+    color: #3b423f;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clickable-text:hover {
+    color: #1f2622;
+}
+
+.forgot-password{
+    display: block;
+    margin: -15px 0 10px;
+    color: #3b423f;
+    text-align: right;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 330px;
+    text-decoration: none;
+}
+
+.forgot-password:hover{
+    color: #1f2622;
+}
+
+.container a{
+    color: #3b423f;
+    margin: 5px;
+    margin-bottom: 13px;
+    text-decoration: none;
+}
+
+.container h1{
+    color: #3b423f;
+    font-size: 50px;
+    margin-bottom: 5px;    
+    margin-top: 5px;
+    cursor: default;
+}
+
+.container p{
+    color: #3b423fda;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: default;
+}
+.social-login{
+    text-align: center;
+}
+
+.social-login p{
+    margin-bottom: 20px;
+    color: #3b423fda;
+    font-size: 14px;
+}
+
+.social-button{
+    display: inline-block;
+    margin: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.social-button img{
+    width: 40px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-button img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.troll-form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+}
+
+.troll-form h1{
+    font-size: 30px;
+    color: #333;
+}
+
+.troll-form p{
+    color: #3b423fda;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.troll-button{
+    background-color: #3b423f;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.troll-button:hover{
+    transform: scale(1.05);
+}
+
+.troll-button:active{
+    transform: scale(0.95);
+}
+
+.move {
+    position: absolute;
+}
